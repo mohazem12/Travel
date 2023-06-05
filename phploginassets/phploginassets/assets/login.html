@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Travel Around The World</title>
+</head>
+
+<body>
+    <!-- MAIN MENU -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/phploginassets/assets/assets/img/logo.jpg" alt="Site Logo" width="120px" height="120px ">
+                <h1 class="logo-text"> Travel Around The World</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="level-nav-link nav-link active" aria-current="page" href="#SEARCH">SEARCH</a>
+                    <a class="level-nav-link nav-link" href="#SERVICES">SERVICES</a>
+                    <a class="level-nav-link nav-link" href="#RECOMMENDS">RECOMMENDS</a>
+                    <a class="level-nav-link nav-link" href="#CONTACT">CONTACT</a>
+                    <a class="level-nav-link nav-link" href="../register/index.php">LOGOUT</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- SERCH FORM -->
+    <div id="SEARCH" class="hero">
+        <div class="container">
+            <form action="index.html" method="get" class="search-form">
+                <div class="form-group" style="flex:100%;">
+                    <i class="fa fa-map-marker"></i>
+                    <input type="text" name="city" class="form-control" placeholder="type your destinating">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-calendar"></i>
+                    <input type="text" class="form-control" id="inputCheckIn" placeholder="Check In ">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-calendar"></i>
+                    <input type="text" class="form-control" id="inputCheckOut" placeholder="Check out ">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-bed"></i>
+                    <select type="text" class="form-control">
+                        <option value="Rooms">Rooms</option>
+                        <option value="1 ">1 Room</option>
+                        <option value="2 ">2 Rooms</option>
+                        <option value="3 ">3 Rooms</option>
+                        <option value="4 ">4 Rooms</option>
+                        <option value="5 ">5 Rooms</option>
+                        <option value="6 ">6 Rooms</option>
+                        <option value="7 ">7 Rooms</option>
+                        <option value="8 ">8 Rooms</option>
+                        <option value="9 ">9 Rooms</option>
+                        <option value="10 ">10 Rooms</option>
+
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-user"></i>
+                    <select type="text" class="form-control">
+                        <option value="Adults">Adults</option>
+                        <option value="1">1 Personal</option>
+                        <option value="2">2 Personal</option>
+                        <option value="3">3 Personal</option>
+                        <option value="4">4 Personal</option>
+                        <option value="5">5 Personal</option>
+                        <option value="6">6 Personal</option>
+                        <option value="7">7 Personal</option>
+                        <option value="8">8 Personal</option>
+                        <option value="9">9 Personal</option>
+                        <option value="10">10 Personal</option>
+
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-user"></i>
+                    <select type="text" class="form-control">
+                        <option value="Children">Children</option>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Children</option>
+                        <option value="3">3 Children</option>
+                        <option value="4">4 Children</option>
+                        <option value="5">5 Children</option>
+                        <option value="6">6 Children</option>
+                        <option value="7">7 Children</option>
+                        <option value="8">8 Children</option>
+                        <option value="9">9 Children</option>
+                        <option value="10">10 Children</option>
+
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit " class="btn btn-primary">Check</button>
+                </div>
+            </form>
+
+            <p class="need-help">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+                <a href="#">Need Help ?</a>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- SUBSCRIBE -->
+    <section class="section-color">
+        <div class="container text-center">
+            <h2 class="section-title">We are here to help you ?</h2>
+            <p class="section-subtitle">subscribe to get our newletters </p>
+            <a href="#" class="btn btn-white">subscribe Newletters</a>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="SERVICES">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
+            class="section-down-arrow">
+            <polygon fill="var(--color-primary)" points="0,0 100,0 50,50"></polygon>
+        </svg>
+
+        <div class="container">
+            <div class="row">
+
+                <article class="article col-lg-4">
+                    <i class="fa fa-legal article-icon"></i>
+                    <h3 class="article-title">Level HTML Temlate by Tooplate Website</h3>
+                    <p>you are allwowed yo download, edit and use this template for your business or clint website</p>
+                    <a href="" class="btn btn-primary btn-fit">Continue reading</a>
+                </article>
+
+                <article class="article col-lg-4">
+                    <i class="fa fa-plane article-icon"></i>
+                    <h3 class="article-title">Oringinal Website Template Producer</h3>
+                    <p>You are NOT allowed to re-distribute the downloadable template ZIP file on any website.</p>
+                    <a href="" class="btn btn-primary btn-fit">Continue reading</a>
+                </article>
+
+                <article class="article col-lg-4">
+                    <i class="fa fa-life-saver article-icon"></i>
+                    <h3 class="article-title">Contact us if you have any question</h3>
+                    <p>If you see this template being distributed on any other site, that is an illegal copy.</p>
+                    <a href="" class="btn btn-primary btn-fit">Continue reading</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDER -->
+    <section id="RECOMMENDS" class="section-gray">
+        <div class="contanir">
+            <div class="row">
+                <div class="col-lg-4">
+
+                    <div class="star-places-header">
+                        <h3>Recommended Places</h3>
+                        <p>Places that we recommend for you</p>
+                    </div>
+
+                    <div class="star-places-body">
+                        <a href="#">
+                            <img src="./assets/img/tn-img-01.jpg" alt="place image">
+                            <h4>Europe</h4>
+                        </a>
+
+                        <a href="#">
+                            <img src="./assets/img/tn-img-02.jpg" alt="place image">
+                            <h4>Asie</h4>
+                        </a>
+
+                        <a href="#">
+                            <img src="./assets/img/tn-img-03.jpg" alt="place image">
+                            <h4>Africa</h4>
+                        </a>
+
+                        <a href="#">
+                            <img src="./assets/img/tn-img-04.jpg" alt="place image">
+                            <h4>America</h4>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-8">
+
+                    <div class="level-slider">
+
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-01.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Now the fear of grief is being targeted at the trigger trucks</h3>
+                                <p>Somewhat and lacusvvolutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin
+                                    at ague venenatis eleifend.</p>
+                                <a href="" class="btn btn-primary btn-fit">Get more Info.</a>
+                            </div>
+                        </article>
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-02.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>But the course was now said to be an employee</h3>
+                                <p>The children of the devil should be pure, and the crimes of the eleifend should be as
+                                    eros. The cartoon of the disease flatters the masses in the casino.</p>
+                                <a href="" class="btn btn-primary btn-fit">View Detail</a>
+                            </div>
+                        </article>
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-01.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Sometimes the kids need a backyard as a portal</h3>
+                                <p>There is no limit to the time of Aenean, and the maximum speed is You are the result,
+                                    but the wisdom of the witch is the result.</p>
+                                <a href="" class="btn btn-primary btn-fit"></a>
+                            </div>
+                        </article>
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-02.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>It's important to be patient, it will be followed</h3>
+                                <p>He suspended the employee, but he needed to pass the test. Two layers of macro
+                                    shooting in basketball. There is a tortor in front, a cheap and cheap ferry, there
+                                    is no advantage of fermenting</p>
+                                <a href="" class="btn btn-primary btn-fit"></a>
+                            </div>
+                        </article>
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-01.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Orci varius natoque penatibus et sollicitudin</h3>
+                                <p> Pushing and pushing , it's a lot of pure chocolate for the eleifend, but it's like
+                                    an eros.</p>
+                                <a href="" class="btn btn-primary btn-fit"></a>
+                            </div>
+                        </article>
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-02.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Don't worry about advertising</h3>
+                                <p>There is no limit to the time of Aenean, and the maximum number of dspibus ac.</p>
+                                <a href="" class="btn btn-primary btn-fit"></a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- VIDEO -->
+    <section class="video">
+        <div class="video-overlay">
+            <i class=" fa fa-play-circle video-control-play"></i>
+            <i class=" fa fa-pause-circle video-control-pause"></i>
+        </div>
+        <div class="video-container">
+            <video class="level-video">
+                <source src="./assets/videos/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="CONTACT">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="map-contya"> <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192698.6476018795!2d28.84702951849229!3d41.005203647512474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1685234668014!5m2!1str!2str"
+                            width="550" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Name" required>
+                            <i class="fa fa-user"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="" id="" class="form-control" placeholder="Email" required>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Subject" required>
+                            <i class="fa fa-book"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea type="text" name="" id="" class="form-control" placeholder="Message" required
+                                rows="9"></textarea>
+                            <i class="fa fa-commenting"></i>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message Now</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>copyright &copy; 2023 Your Company - Desing:
+                <a href="https://www.instagram.com/hazem_ismail053/"></a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./assets/Js/script.js"></script>
+</body>
+
+</html>
